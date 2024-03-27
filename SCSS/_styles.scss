@@ -1,0 +1,96 @@
+* {
+  /*
+  Para restaurar los estilos por defecto del navegador
+  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  main {
+    background-image: url("../img/windows_xp_bliss-wide.webp");
+    overflow: hidden;
+    position: sticky;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+      color: white;
+      font-weight: 400;
+      font-size: 25px;
+      background-color: rgba(23, 131, 179, 50%);
+      border-radius: 10px;
+      padding: 15px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 15%;
+      margin-top: 50px;
+    }
+    #kanban {
+      width: 100%;
+      .column {
+        padding: 10px;
+        width: 18%;
+        float: left;
+        background-color: #ffffffaa;
+        border-radius: 1em;
+        overflow: hidden;
+        margin-top: 30px;
+        margin-left: 25px;
+        h2 {
+          padding-bottom: 20px;
+        }
+        .card {
+          background-color: white;
+          border: solid 1px black;
+          border-radius: 10px;
+          margin-bottom: 15px;
+          padding: 50px;
+          p {
+            padding-top: 35px;
+          }
+        }
+        .card:hover {
+          background-color: rgba(23, 131, 179, 50%);
+          cursor: pointer;
+          color: white;
+        }
+      }
+    }
+
+    div .tag.front,
+    .tag.back,
+    .tag.device {
+      float: left;
+      display: inline;
+    }
+
+    div .tag.front {
+      background-color: green;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    div .tag.back {
+      background-color: red;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    div .tag.device {
+      background-color: yellow;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+    }
+  }
+}
